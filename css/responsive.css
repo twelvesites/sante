@@ -1,0 +1,116 @@
+@media (max-width: 760px) {
+      .hhimg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #handhygiene img {
+            width: 40%;
+        }
+        #content-steps {
+            height: 400px;
+        }
+        #content-steps img {
+            width: 40%;
+        }
+        #banner {
+            margin-top: 60px;
+      }
+      .options-container {
+        grid-template-columns: 1fr;
+    }
+
+    .option-button {
+        width: 100%; /* Ensure buttons span the width of their container */
+        margin: 0 auto; /* Center buttons horizontally */
+    }
+    .modal-content {
+        width: 80%;
+    }
+    #quizContainer {
+        max-width: 90%;
+        margin: 18% auto;
+    }
+
+    .options-container {
+        gap: 0rem;
+    }
+    #resultContainer {
+        margin: 15% auto;
+    }
+}
+@media (max-width: 425px) {
+      #handhygiene img {
+            width: 70%;
+        }
+        #steps h1 {
+            font-size: 1.4rem;
+            text-align: center;
+            margin: 20px 10px;
+            color: #1a4557;
+        }
+        #handhygiene h1 {
+            margin-top: 20px;
+        }
+        #content-steps img {
+            width: 60%;
+        }
+        #content-steps {
+            max-width: 95%;
+        }
+        #handhygiene p {
+            margin: 5px;
+        }
+        .navbar img {
+            width: 80px;
+      }
+      .menu a {
+            font-size: 12px;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the text */
+            color: #f7f7f7; /* White text color */
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+      }
+      .text-overlay p {
+            font-size: 0.8rem;
+        }
+        .text-overlay button {
+            font-size: 1.2rem;
+            background-color: #55b0aa;
+            padding: 5px 65px;
+            border-radius: 30px;
+            border-color: transparent;
+            color: #f7f7f7;
+            margin: 10px;
+        }
+        #handhygiene h1 {
+          font-size: 2rem;
+        }
+        .modal-content .start {
+            margin-top: 20px;
+        }
+        #quizContainer {
+            margin: 23% auto;
+        }
+        #questionContainer {
+            font-size: 1rem;
+        }
+        #quizContainer h1 {
+            font-size: 1.2rem;
+        }
+        #resultContainer {
+            margin: 23% auto;
+        }
+        #optionsContainer button {
+            padding: 10px 0px;
+        }
+}
+
+
