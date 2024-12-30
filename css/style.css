@@ -104,7 +104,7 @@ video {
       border-radius: 30px;
       border-color: transparent;
       color: #f7f7f7;
-      margin: 10px;
+      margin: 20px 0;
 }
 #handhygiene {
       background-color: #ffffff;
@@ -190,7 +190,7 @@ video {
       float: right;
       font-size: 55px;
       position: relative;
-      right: 50px;
+      right: 90px;
       margin-top: -70px;
       background-color: #444ee4;
       color: white;
@@ -198,6 +198,9 @@ video {
       border-radius: 90px;
       cursor: pointer;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#next-button:hover {
+    background-color: #202791;
 }
 #faqs h1 {
     font-size: 3rem;
@@ -225,6 +228,7 @@ video {
     font-weight: bold;
     color: #ffffff;
     margin-top: -30px;
+    width: 60%;
 }
 
 .faq-question:hover {
@@ -244,6 +248,7 @@ video {
     max-height: 0; /* Initially collapse the answer */
     opacity: 0; /* Initially make the answer invisible */
     transition: max-height 0.5s ease-out, opacity 0.3s ease-out; /* Smooth transition */
+    width: 40%;
 }
 
 .faq-answer.show {
@@ -549,7 +554,7 @@ video {
       grid-template-columns: 1fr 1fr;
   }
   .glow-on {
-    margin-top: 50px;
+    margin-top: 10px;
     width: 220px;
     height: 50px;
     border: none;
@@ -577,4 +582,12 @@ video {
     100% {
         box-shadow: 0 0 5px #ff5e62, 0 0 10px #ff5e62, 0 0 15px #ff5e62, 0 0 20px #ff5e62;
     }
+}
+#explore-button span {
+    transform: translateY(2px); /* Move 2px downward */
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 20px;
+}
+#next-button span {
+  font-size: 40px;
 }

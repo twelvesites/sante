@@ -38,6 +38,11 @@
     #resultContainer {
         margin: 15% auto;
     }
+    .footer-left {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
 @media (max-width: 425px) {
       #handhygiene img {
@@ -110,6 +115,12 @@
         }
         #optionsContainer button {
             padding: 10px 0px;
+        }
+        .faq-question {
+            width: 100%;
+        }
+        .faq-answer.show {
+            width: auto;
         }
 }
 
