@@ -230,38 +230,34 @@ function downloadCertificate() {
         const percentage = ((score / totalQuestions) * 100).toFixed(2);
         doc.text(`Score: ${percentage}%`, centerX, 135, { align: "center" });
 
-        // Generate the PDF as a Blob
+        // Generate the PDF as a Blob URL
         const pdfBlob = doc.output('blob');
+        const blobURL = URL.createObjectURL(pdfBlob);
 
         // Detect if the device is iOS
         const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-        const link = document.createElement('a');
-        link.href = URL.createObjectURL(pdfBlob);
-        link.download = 'Twelve-Certificate.pdf';
-        link.rel = 'noopener';
 
         if (isIOS) {
-            // Open a new tab for iOS devices
-            link.target = '_blank';
-            link.style.display = 'none'; // Make the link invisible
-
-            document.body.appendChild(link);
-            // Trigger click via a timeout to handle iOS restrictions
-            setTimeout(() => {
-                link.click();
-                document.body.removeChild(link);
-            }, 100);
+            // Redirect to Blob URL for iOS devices
+            window.location.href = blobURL;
         } else {
-            // For non-iOS devices, trigger download normally
+            // For non-iOS devices, trigger download
+            const link = document.createElement('a');
+            link.href = blobURL;
+            link.download = 'Twelve-Certificate.pdf';
+            link.rel = 'noopener';
+            link.style.display = 'none';
+
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
-            URL.revokeObjectURL(link.href); // Free up memory
+            URL.revokeObjectURL(blobURL); // Free up memory
         }
     };
 
     img.src = 'https://twelvesites.github.io/ipc/images/certificate_template.png'; // Path to your certificate template image
 }
+
 
 
 // Expose to global scope
