@@ -43,6 +43,19 @@
         align-items: flex-start;
         flex-direction: column;
     }
+    .handwashvideo {
+        width: 90%;
+        margin-top: 20px;
+        position: relative;
+        object-fit: none;
+        border-radius: 20px;
+    }
+    .videoofhandwash{
+        font-size: 1rem;
+          text-align: center;
+          margin: 0px;
+          color: #1a4557;
+    }
 }
 @media (max-width: 425px) {
       #handhygiene img {
@@ -121,6 +134,9 @@
         }
         .faq-answer.show {
             width: auto;
+        }
+        .videoofhandwash{
+            font-size: 0.8rem;
         }
 }
 

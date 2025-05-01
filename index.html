@@ -14,10 +14,31 @@
 	<title>Santé | Twelve</title>
 </head>
 <body>
+	
 	<!-- Splash Screen -->
 	<div id="splash-screen">
 		<img src="images/logo.png" alt="Logo" class="splash-logo">
 	</div>
+	<!-- Welcome Modal -->
+<div id="welcomeModal" class="modal">
+	<div class="modal-content">
+		<img src="https://rahmaniamall.ae/wp-content/uploads/2023/05/Prime-Medical-centre-01.png" width="20%">
+		<h3>Welcome to <b>Prime Medical Center</b></h3>
+		<p>
+		Let's celebrate Hand Hygiene Day together!<br><br>
+		  As part of <b>Infection Prevention Week</b> and <b>World Hand Hygiene Day</b>, this page will guide you through:<br>
+		  - Essential hand hygiene tips<br>
+		  - A quick quiz<br>
+		  - Your certificate of completion!<br><br>
+		  Take a moment to learn, test your knowledge, and earn your certificate. Thank you for helping us create a safer, healthier environment!
+		</p>
+		<button id="closeModal">OK</button>
+	  </div>
+	  
+  </div>
+  
+
+
 
 	<!-- Main Content -->
 	<div id="main-content">
@@ -62,6 +83,17 @@
 			<img src="images/handhygiene/7.png" alt="">
 		</div>
 	  </section>
+	  
+	  <center>
+		<div class="videoofhandwash">
+			<h1>Watch the video 👇</h1>
+		<video controls class="handwashvideo">
+			<source src="handwash.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+		</div>
+	  </center>
+
 
 	  <section id="steps">
 			<h1>Steps to <b>Prevent Infection</b></h1>
@@ -164,6 +196,7 @@
 <script src="js/faq-animation.js"></script>
 <script src="js/smooth-scroll.js"></script>
 <script src="js/faqs.js"></script>
+<script src="js/popup.js"></script>
 <script>
 	setTimeout(function() {
     document.getElementById('splash-screen').style.opacity = '0'; // Fade out splash screen
